@@ -9,7 +9,7 @@ public class ProfileController extends ActionsController {
 
     //Navigation Controller
     @RequestMapping( value = "/profile")
-    public String index(Model model) {
+    public String profile(Model model) {
          actionChoices.put("viewCalendar", "View Calendar");
         actionChoices.put("profile", "Profile");
         actionChoices.put("edit","Edit");

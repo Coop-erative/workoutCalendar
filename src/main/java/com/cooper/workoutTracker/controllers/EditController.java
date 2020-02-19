@@ -10,7 +10,7 @@ public class EditController extends ActionsController{
 
     //Navigation Controller
     @RequestMapping( value ={"/edit"})
-    public String index(Model model) {
+    public String edit(Model model) {
         actionChoices.put("viewCalendar", "View Calendar");
         actionChoices.put("profile", "Profile");
         actionChoices.put("edit","Edit");
