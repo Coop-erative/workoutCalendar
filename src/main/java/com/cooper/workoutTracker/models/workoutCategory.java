@@ -13,15 +13,15 @@ public class workoutCategory {
         priority = aPriority;
     }
 
-    //Custom methods = toString, hashCode, equals..
-    @Override
-    public String toString() {
-        //TODO: figure toString validation and preferred return
+////    Custom methods = toString, hashCode, equals..
+//    @Override
+//    public String toString() {
+//        //TODO: figure toString validation and preferred return
 //        String output = "";
 //
 //        output = String.format("");
 //        return output;
-    }
+//    }
     //TODO: hashcode and equals...
 
     //Getters and Setter

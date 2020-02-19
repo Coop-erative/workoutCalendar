@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+.calendarHead {
+  padding: 70px 50px 25px 50px;
+  height: 100%;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.calendarHead ul {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.timeSlots {
+  width: 1000px;
+  margin: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.timeSlots th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.weekday {
+
+}
+
+weekdays {
+|
+    </style>
+
+    <head th:replace="fragments :: head"></head>
+
+</head>
+<body>
+<!--    navigation-->
+    <div th:replace="fragments :: page-header"></div>
+
+<!--calendar "header"-->
+<div class="calendarHead">
+    <ul>
+        <p>
+<!--            TODO: dynamic change to current month and year-->
+            Month<br>
+            <span style="font-size:18px">Year</span>
+        </p>
+    </ul>
+</div>
+
+<div style="overflow-x:auto;">
+    <table class="timeSlots">
+        <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <!--eventaully going to be a fragment TODO:create Dynamic fragment for population-->
+        <tr class="weekday">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr class="weekday">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+<div>
+
+</body>
+</html>

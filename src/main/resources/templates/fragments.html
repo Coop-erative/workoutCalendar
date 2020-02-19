@@ -6,13 +6,16 @@
     <!-- Bootstrap stylesheets and script -->
     <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
     <link th:href="@{/css/workoutTracker.css}" rel="stylesheet" />
+
+    <!--calendar-->
+    <link rel="stylesheet" type="text/css" href="css/workoutTracker.css">
     <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
 
     <title th:text="'WorkoutTracker' + ${title == null ? '' : ' :: ' + title}">Workout Tracker</title>
     <meta charset="UTF-8">
     <title>Workout Tracker</title>
 </head>
-
+<!--Navigation setup-->
 <body>
 <div th:fragment="page-header" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -28,6 +31,12 @@
         </div>
     </div>
 </div>
+
+<!--Calendar test-->
+<div th:fragment="calendar">
+
+</div>
+
 
 </body>
 </html>

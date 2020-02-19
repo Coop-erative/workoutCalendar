@@ -20,5 +20,15 @@ public class HomeController extends ActionsController{
         return "index";
     }
 
+    @RequestMapping (value="/calendarTest")
+    public String calendarTest(Model model) {
+        actionChoices.put("viewCalendar", "View Calendar");
+        actionChoices.put("profile", "Profile");
+        actionChoices.put("edit","Edit");
+
+        model.addAttribute("actions", actionChoices);
+
+        return "calendarTest";
+    }
 
 }
