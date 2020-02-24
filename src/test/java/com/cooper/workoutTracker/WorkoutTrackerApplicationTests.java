@@ -26,8 +26,5 @@ public class WorkoutTrackerApplicationTests {
 				.andExpect(content().string(containsString("Hello, World")));
 	}
 
-
-
-
 }
 

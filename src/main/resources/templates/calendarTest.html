@@ -1,42 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <style>
-.calendarHead {
-  padding: 70px 50px 25px 50px;
-  height: 100%;
-  width: 100%;
-  background: #1abc9c;
-  text-align: center;
-}
-
-.calendarHead ul {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.timeSlots {
-  width: 1000px;
-  margin: auto;
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-.timeSlots th, td {
-  padding: 8px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-.weekday {
-
-}
-
-weekdays {
-|
-    </style>
+    <link rel="stylesheet" href="workoutTracker.css">
+    <script src="resources/static/js/calendarHead.js"></script>
 
     <head th:replace="fragments :: head"></head>
 
@@ -50,7 +16,8 @@ weekdays {
     <ul>
         <p>
 <!--            TODO: dynamic change to current month and year-->
-            Month<br>
+             <p id="demo"></p>
+            <br>
             <span style="font-size:18px">Year</span>
         </p>
     </ul>
