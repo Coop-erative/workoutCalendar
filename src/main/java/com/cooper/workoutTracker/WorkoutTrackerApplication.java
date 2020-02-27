@@ -15,5 +15,5 @@ public class WorkoutTrackerApplication {
 		private String name;
 		private Email email;
 
-//		public frank = new main(1,"frank", "frank@gmail.com");
+		//		public frank = new main(1,"frank", "frank@gmail.com");
 }

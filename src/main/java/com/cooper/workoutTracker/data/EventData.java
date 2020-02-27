@@ -1,31 +1,29 @@
 package com.cooper.workoutTracker.data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import com.cooper.workoutTracker.models.Event;
 
-//This is a basic set up & needs to be updated for this project specifically
-//TODO: update to this project.
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
-@Entity
 public class EventData {
 
-    @Id
-    @GeneratedValue
-    private int id;
+    private static final Map<Integer, Event> events = new HashMap<>();
 
-    @NotBlank(message = "Name is required")
-    @Size(min =3, max = 50, message = "Name must be between 3 and 50 characters")
-    private String name;
+    public static Collection<Event> getAll() {
+        return events.values();
+    }
 
-    @Size(max = 500, message = "Description too long!")
-    private String description;
+    public static  Event getById(int id) {
+        return events.get(id);
+    }
 
-    public EventData(String name, String description) {
-        this.name = name;
-        this.description = description;
+    public static void add(Event event) {
+        events.put(event.getId(), event);
+    }
+
+    public static void remove(int id) {
+        events.remove(id);
     }
 
 }
